@@ -1,58 +1,58 @@
 # ⚡ Smart Ghost Clipboard (v2.0.0)
 
-Një asistent inteligjent dhe ultra i shpejtë për Windows që integron kujtesën e përkohshme (Clipboard) me modelet më të avancuara të OpenAI (`gpt-5.4-nano` / `gpt-4o-mini`).
+An intelligent, ultra-fast Windows assistant that seamlessly connects your system clipboard with state-of-the-art OpenAI models (`gpt-5.4-nano` / `gpt-4o-mini`).
 
 ---
 
-## ✨ Karakteristikat Kryesore
+## ✨ Key Features
 
-- **📌 Nisje nga Kudo & Taskbar:** Ekzekutuesi nativ `SmartGhostClipboard.exe` mund të kapet direkt në Taskbar (Pin to taskbar), të vendoset në Desktop ose Start Menu, dhe hapet menjëherë pavarësisht se ku e zhvendosni dosjen e projektit.
-- **⚡ IPC Wake-Up:** Nëse aplikacioni është tashmë aktiv në System Tray, klikimi mbi ikonën në Taskbar ose shkurtore e rikthen dhe e shfaq dritaren menjëherë në fokus me tekstin e freskët nga clipboard.
-- **Shkurtore Globale në Çdo Vend:** Shtypni `Ctrl + Shift + V` ose `Ctrl + Alt + V` në çdo aplikacion në Windows (Word, Chrome, Slack, VS Code) për të hapur menjëherë dritaren.
-- **Fokus i Forcuar (Windows API):** Dritarja vjen automatikisht në plan të parë me fokus të plotë pa pasur nevojë për klikime shtesë.
-- **Power-User In-Window Hotkeys:** Ekzekutoni çdo veprim menjëherë nga tastiera (`Alt+1`..`Alt+5`, `Ctrl+1`..`Ctrl+5`, `F5`, `Ctrl+Shift+C`, `Ctrl+L`).
-- **5 Kategori me 25 Veprime AI & 7 Prompt Chips:** Përfshin Shkrim & Gramatikë, Biznes & Email, Përkthim Multilingual, Përmbledhje & Action Items, Kod & Zhvillim.
-- **Single & Split View me Diff Highlighter:** Krahasoni tekstin origjinal dhe atë të transformuar krah për krah.
-- **Sirtar Historiku me SQLite:** Kërkim në kohë reale, ruajtje e preferencave (Favorites), dhe ri-ngarkim me 1 klikim.
-- **System Tray i Integruar:** Rri i heshtur në sfond me ikonë në zonën e njoftimeve dhe menu të pasur kontekstuale.
-- **DPI Awareness (HiDPI / 4K):** Ndërfaqe e mprehtë dhe e qartë në ekrane 100%, 125%, 150% dhe 200%.
-
----
-
-## 🚀 Si të vendosni ikonën në Taskbar dhe Desktop
-
-### 1. Vendosja në Taskbar (Pin to Taskbar):
-1. Shkoni te dosja e projektit.
-2. Klikoni me tastin e djathtë mbi skedarin **`SmartGhostClipboard.exe`**.
-3. Zgjidhni **"Pin to taskbar"** (ose *Kap në shiritin e detyrave*).
-4. Tani aplikacioni hapet në çdo moment me 1 klikim direkt nga Taskbari!
-
-### 2. Krijimi i Shkurtores në Desktop:
-- Klikoni dy herë mbi **`Create_Shortcut.bat`**, ose
-- Klikoni me të djathtën mbi ikonën e aplikacionit te ora (System Tray) dhe zgjidhni **"📌 Krijo Shkurtore në Desktop"**.
+- **📌 Launch from Anywhere & Pin to Taskbar:** The native `SmartGhostClipboard.exe` launcher can be pinned directly to your Windows Taskbar, placed on your Desktop, or pinned to the Start Menu. It launches instantly and reliably regardless of where the project folder is located.
+- **⚡ IPC Wake-Up:** If the application is already running in the background (System Tray), launching the app via shortcut or Taskbar icon sends an inter-process wake-up signal, immediately bringing the floating overlay to the front with the latest clipboard content.
+- **Global Hotkeys:** Press `Ctrl + Shift + V` or `Ctrl + Alt + V` from any Windows application (browsers, Word, Slack, VS Code, etc.) to summon the assistant instantly.
+- **Forced Foreground Focus (Windows API):** The window is automatically brought to the foreground with immediate keyboard focus, eliminating the need for extra mouse clicks.
+- **Power-User In-Window Hotkeys:** Execute actions at keyboard speed (`Alt+1`..`Alt+5`, `Ctrl+1`..`Ctrl+5`, `F5`, `Ctrl+Shift+C`, `Ctrl+L`).
+- **5 Action Categories with 25 AI Presets & 7 Prompt Chips:** Includes Writing & Grammar, Business & Email, Multilingual Translation, Summaries & Action Items, and Code & Development.
+- **Single & Split View with Diff Highlighter:** Compare original input and transformed output side-by-side with color-coded diff highlighting.
+- **SQLite History Drawer:** Persistent clipboard history with real-time fuzzy search, favorite pinning, and 1-click restoration.
+- **Integrated System Tray:** Runs quietly in the notification area with a full-featured context menu.
+- **HiDPI & 4K Ready:** Crisp, perfectly scaled UI across 100%, 125%, 150%, and 200% display scaling.
 
 ---
 
-## ⌨️ Shkurtoret e Tastierës (Keyboard Shortcuts)
+## 🚀 How to Pin to Taskbar & Desktop
 
-| Shkurtorja | Veprimi |
+### 1. Pin to Taskbar
+1. Open the project directory in File Explorer.
+2. Right-click on **`SmartGhostClipboard.exe`**.
+3. Select **"Pin to taskbar"**.
+4. You can now launch and focus Smart Ghost Clipboard with a single click at any time!
+
+### 2. Create Desktop Shortcut
+- Double-click **`Create_Shortcut.bat`**, or
+- Right-click the application icon in the System Tray (notification area by the clock) and select **"📌 Create Desktop Shortcut"**.
+
+---
+
+## ⌨️ Keyboard Shortcuts
+
+| Shortcut | Action |
 |:---|:---|
-| `Ctrl + Shift + V` / `Ctrl + Alt + V` | **Hap dritaren lundruese** nga kudo në Windows |
-| `1` deri `5` (ose `Alt+1`..`5`) | ⚡ **Ekzekuto veprimin përkatës të kategorisë** |
-| `Ctrl + Tab` / `Ctrl + Shift + Tab` | 🔄 **Ndërro Kategoritë** |
-| `Ctrl + D` | 🔲 **Kalo midis Single View dhe Split View** |
-| `Ctrl + H` | 📚 **Hap / Fsheh Sirtarin e Historikut** |
-| `Ctrl + Enter` | 🚀 **Kopjo & Auto-Paste direkt në aplikacionin aktiv** |
-| `F5` ose `Ctrl + R` | 🔄 **Rifresko nga Clipboard** |
-| `Ctrl + Shift + C` ose `Ctrl + K` | 📋 **Kopjo Rezultatin në Clipboard** |
-| `Ctrl + L` | 🧹 **Pastro Tekstin** |
-| `Escape` | ❌ **Fsheh dritaren në sfond (System Tray)** |
+| `Ctrl + Shift + V` / `Ctrl + Alt + V` | **Open floating overlay** from anywhere in Windows |
+| `1` to `5` (or `Alt+1`..`5`) | ⚡ **Execute corresponding action** in the active category |
+| `Ctrl + Tab` / `Ctrl + Shift + Tab` | 🔄 **Switch categories** |
+| `Ctrl + D` | 🔲 **Toggle between Single View and Split View** |
+| `Ctrl + H` | 📚 **Open / Close History Drawer** |
+| `Ctrl + Enter` | 🚀 **Copy & Auto-Paste directly into the active application** |
+| `F5` or `Ctrl + R` | 🔄 **Refresh content from Clipboard** |
+| `Ctrl + Shift + C` or `Ctrl + K` | 📋 **Copy result to Clipboard** |
+| `Ctrl + L` | 🧹 **Clear text** |
+| `Escape` | ❌ **Hide window to System Tray** |
 
 ---
 
-## ⚙️ Konfigurimi (`.env`)
+## ⚙️ Configuration (`.env`)
 
-Krijoni skedarin `.env` në rrënjën e projektit:
+Create a `.env` file in the project root directory (or copy from `.env.example`):
 
 ```ini
 OPENAI_API_KEY=sk-proj-xxxxxxxxxxxxxxxxxxxx
@@ -61,3 +61,17 @@ AI_MODEL=gpt-5.4-nano
 # HOTKEY_COMBINATION=<ctrl>+<shift>+v
 # AI_TIMEOUT_SECONDS=30.0
 ```
+
+---
+
+## 🛠️ Installation & Setup
+
+1. **Clone or download** the repository.
+2. **Create a virtual environment & install dependencies:**
+   ```powershell
+   python -m venv venv
+   .\venv\Scripts\activate
+   pip install -r requirements.txt
+   ```
+3. **Configure API Key:** Add your `OPENAI_API_KEY` to `.env`.
+4. **Launch:** Run `SmartGhostClipboard.exe` or `run.bat`.
