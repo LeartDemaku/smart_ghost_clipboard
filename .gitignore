@@ -1,0 +1,25 @@
+# Mjedisi virtual Python
+venv/
+.venv/
+env/
+
+# Skedarët e përkohshëm të Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Konfigurimet sekrete dhe çelësat API
+.env
+
+# Skedarët e paketimit dhe ndërtimit me PyInstaller
+build/
+dist/
+*.spec
+
+# Skedarët e logimit
+*.log
+
+# Konfigurimet e redaktuesve
+.vscode/
+.idea/

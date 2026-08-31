@@ -1,0 +1,13 @@
+@echo off
+cd /d "%~dp0"
+if exist ".\SmartGhostClipboard.exe" (
+    start "" ".\SmartGhostClipboard.exe"
+) else if exist ".\venv\Scripts\pythonw.exe" (
+    start "" ".\venv\Scripts\pythonw.exe" main.py
+) else if exist ".\venv\Scripts\python.exe" (
+    start "" ".\venv\Scripts\python.exe" main.py
+) else (
+    start "" pythonw.exe main.py
+)
+exit
+
